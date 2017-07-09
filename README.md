@@ -1,5 +1,7 @@
 # @exeto/eslint-config [![Peer Dependency Status][peerdepstat-image]][peerdepstat-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/exeto/eslint-config.svg)](https://greenkeeper.io/)
+
 > My ESLint config
 
 ## Install
