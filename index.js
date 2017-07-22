@@ -11,6 +11,7 @@ module.exports = {
   },
   env: {
     browser: true,
+    es6: true,
   },
   rules: {
     'array-bracket-spacing': ['error', 'never'],
