@@ -1,4 +1,4 @@
-/* eslint-env node */
+'use strict';
 
 module.exports = {
   extends: require.resolve('./'),
@@ -9,7 +9,7 @@ module.exports = {
     node: true,
   },
   rules: {
-    'strict': ['error', 'global'],
+    strict: ['error', 'global'],
     'no-console': 'off',
   },
 };

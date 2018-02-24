@@ -1,4 +1,4 @@
-/* eslint-env node */
+'use strict';
 
 module.exports = {
   extends: 'eslint:recommended',
@@ -21,75 +21,102 @@ module.exports = {
     'block-scoped-var': 'error',
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    'camelcase': ['error', { properties: 'never' }],
+    camelcase: ['error', { properties: 'never' }],
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['error', { before: false, after: true }],
     'comma-style': ['error', 'last'],
-    'complexity': ['error', 11],
+    complexity: ['error', 11],
     'computed-property-spacing': ['error', 'never'],
-    'curly': ['error', 'multi-line'],
+    curly: ['error', 'multi-line'],
     'default-case': ['error', { commentPattern: '^no default$' }],
     'dot-location': ['error', 'property'],
     'dot-notation': ['error', { allowKeywords: true }],
     'eol-last': ['error', 'always'],
-    'eqeqeq': ['error', 'allow-null'],
+    eqeqeq: ['error', 'allow-null'],
     'func-call-spacing': ['error', 'never'],
     'func-style': ['off', 'expression'],
     'generator-star-spacing': ['error', { before: false, after: true }],
     'guard-for-in': 'error',
-    'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
+    indent: [
+      'error',
+      2,
+      { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 },
+    ],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
-    'strict': 'error',
-    'keyword-spacing': ['error', {
-      before: true,
-      after: true,
-      overrides: {
-        return: { after: true },
-        throw: { after: true },
-        case: { after: true },
+    strict: 'error',
+    'keyword-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+        overrides: {
+          return: { after: true },
+          throw: { after: true },
+          case: { after: true },
+        },
       },
-    }],
-    'line-comment-position': ['error', {
-      position: 'above',
-      ignorePattern: '',
-      applyDefaultPatterns: true,
-    }],
+    ],
+    'line-comment-position': [
+      'error',
+      {
+        position: 'above',
+        ignorePattern: '',
+        applyDefaultPatterns: true,
+      },
+    ],
     'linebreak-style': ['error', 'unix'],
-    'lines-around-directive': ['error', {
-      before: 'always',
-      after: 'always',
-    }],
-    'max-len': ['error', 100, 2, {
-      ignoreUrls: true,
-      ignoreComments: false,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
-    'new-cap': ['error', {
-      newIsCap: true,
-      newIsCapExceptions: [],
-      capIsNew: false,
-      capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
-    }],
+    'lines-around-directive': [
+      'error',
+      {
+        before: 'always',
+        after: 'always',
+      },
+    ],
+    'max-len': [
+      'error',
+      100,
+      2,
+      {
+        ignoreUrls: true,
+        ignoreComments: false,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
+    ],
+    'new-cap': [
+      'error',
+      {
+        newIsCap: true,
+        newIsCapExceptions: [],
+        capIsNew: false,
+        capIsNewExceptions: [
+          'Immutable.Map',
+          'Immutable.Set',
+          'Immutable.List',
+        ],
+      },
+    ],
     'new-parens': 'error',
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
     'no-alert': 'warn',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
     'no-caller': 'error',
-    'no-confusing-arrow': ['error', {
-      allowParens: true,
-    }],
+    'no-confusing-arrow': [
+      'error',
+      {
+        allowParens: true,
+      },
+    ],
     'no-continue': 'error',
     'no-duplicate-imports': 'error',
     'no-else-return': 'error',
-    'no-empty-function': ['error', {
-      allow: [
-        'arrowFunctions',
-        'functions',
-        'methods',
-      ],
-    }],
+    'no-empty-function': [
+      'error',
+      {
+        allow: ['arrowFunctions', 'functions', 'methods'],
+      },
+    ],
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
@@ -101,16 +128,19 @@ module.exports = {
     'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-mixed-operators': ['error', {
-      groups: [
-        ['+', '-', '*', '/', '%', '**'],
-        ['&', '|', '^', '~', '<<', '>>', '>>>'],
-        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-        ['&&', '||'],
-        ['in', 'instanceof'],
-      ],
-      allowSamePrecedence: false,
-    }],
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['+', '-', '*', '/', '%', '**'],
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof'],
+        ],
+        allowSamePrecedence: false,
+      },
+    ],
     'no-lonely-if': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
@@ -126,17 +156,22 @@ module.exports = {
     'no-plusplus': 'error',
     'no-proto': 'error',
     'no-prototype-builtins': 'error',
-    'no-restricted-properties': ['error', {
-      object: 'arguments',
-      property: 'callee',
-      message: 'arguments.callee is deprecated,',
-    }, {
-      property: '__defineGetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }, {
-      property: '__defineSetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }],
+    'no-restricted-properties': [
+      'error',
+      {
+        object: 'arguments',
+        property: 'callee',
+        message: 'arguments.callee is deprecated,',
+      },
+      {
+        property: '__defineGetter__',
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
+        property: '__defineSetter__',
+        message: 'Please use Object.defineProperty instead.',
+      },
+    ],
     'no-restricted-syntax': [
       'error',
       'ForInStatement',
@@ -156,72 +191,105 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: false,
-      allowTernary: false,
-    }],
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+      },
+    ],
     'no-use-before-define': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-concat': 'error',
     'no-useless-constructor': 'error',
-    'no-useless-rename': ['error', {
-      ignoreDestructuring: false,
-      ignoreImport: false,
-      ignoreExport: false,
-    }],
+    'no-useless-rename': [
+      'error',
+      {
+        ignoreDestructuring: false,
+        ignoreImport: false,
+        ignoreExport: false,
+      },
+    ],
     'no-var': 'error',
     'no-void': 'error',
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-curly-spacing': ['error', 'always'],
-    'object-property-newline': ['error', {
-      allowMultiplePropertiesPerLine: true,
-    }],
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
+    'object-property-newline': [
+      'error',
+      {
+        allowMultiplePropertiesPerLine: true,
+      },
+    ],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
+    ],
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': ['error', 'always'],
     'padded-blocks': ['error', 'never'],
-    'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true,
-    }],
-    'prefer-const': ['error', {
-      destructuring: 'any',
-      ignoreReadBeforeAssign: true,
-    }],
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
     'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'consistent-as-needed', {
-      keywords: false,
-      unnecessary: true,
-      numbers: false,
-    }],
-    'radix': 'error',
+    'quote-props': [
+      'error',
+      'consistent-as-needed',
+      {
+        keywords: false,
+        unnecessary: true,
+        numbers: false,
+      },
+    ],
+    radix: 'error',
     'rest-spread-spacing': ['error', 'never'],
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
     'semi-spacing': ['error', { before: false, after: true }],
     'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', {
-      anonymous: 'always',
-      named: 'never',
-    }],
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'always',
+        named: 'never',
+      },
+    ],
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
-    'space-unary-ops': ['error', {
-      words: true,
-      nonwords: false,
-      overrides: {},
-    }],
-    'spaced-comment': ['error', 'always', {
-      exceptions: ['-', '+'],
-      markers: ['=', '!'],
-    }],
+    'space-unary-ops': [
+      'error',
+      {
+        words: true,
+        nonwords: false,
+        overrides: {},
+      },
+    ],
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        exceptions: ['-', '+'],
+        markers: ['=', '!'],
+      },
+    ],
     'callback-return': 'error',
     'lines-around-comment': ['error', { beforeBlockComment: true }],
     'newline-after-var': ['error', 'always'],
@@ -239,14 +307,18 @@ module.exports = {
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'outside'],
     'yield-star-spacing': ['error', 'after'],
-    'yoda': 'error',
-    'prefer-destructuring': ['error', {
-      array: false,
-      object: true,
-    }, {
-      enforceForRenamedProperties: false,
-    }],
-    'quotes': ['error', 'single'],
+    yoda: 'error',
+    'prefer-destructuring': [
+      'error',
+      {
+        array: false,
+        object: true,
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
+    quotes: ['error', 'single'],
     'require-await': 'error',
     'template-tag-spacing': 'error',
   },
