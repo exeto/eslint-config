@@ -1,11 +1,15 @@
-1.0.0 / 2018-02-24
-==================
-- Update eslint to version 4.18.1
+# 1.1.0 / 2018-03-06
 
-0.2.0 / 2017-07-22
-==================
-- Add "es6" to env
+* Disable `callback-return`
 
-0.1.0 / 2017-07-09
-==================
-- Initial commit
+# 1.0.0 / 2018-02-24
+
+* Update eslint to version 4.18.1
+
+# 0.2.0 / 2017-07-22
+
+* Add "es6" to env
+
+# 0.1.0 / 2017-07-09
+
+* Initial commit
