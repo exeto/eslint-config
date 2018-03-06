@@ -290,7 +290,6 @@ module.exports = {
         markers: ['=', '!'],
       },
     ],
-    'callback-return': 'error',
     'lines-around-comment': ['error', { beforeBlockComment: true }],
     'newline-after-var': ['error', 'always'],
     'newline-before-return': 'error',
