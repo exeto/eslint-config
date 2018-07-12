@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-$ npm install --save-dev @exeto/eslint-config eslint@^4.18.1
+$ npm install --save-dev @exeto/eslint-config eslint@^5.1.0
 ```
 
 ## Usage
