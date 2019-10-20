@@ -1,3 +1,7 @@
+# 2.0.1 / 2019-10-20
+
+- Declare the package is deprecated
+
 # 2.0.0 / 2018-07-12
 
 - Remove deprecated `experimentalObjectRestSpread`

@@ -1,6 +1,6 @@
 {
   "name": "@exeto/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "My ESLint config",
   "main": "index.js",
   "repository": "exeto-archive/eslint-config",
