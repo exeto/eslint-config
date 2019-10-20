@@ -2,6 +2,8 @@
 
 > My ESLint config
 
+**THIS PACKAGE IS NO LONGER MAINTAINED**
+
 ## Install
 
 ```bash

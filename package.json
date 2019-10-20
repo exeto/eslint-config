@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "My ESLint config",
   "main": "index.js",
-  "repository": "exeto/eslint-config",
+  "repository": "exeto-archive/eslint-config",
   "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/)",
   "license": "MIT",
   "files": [
